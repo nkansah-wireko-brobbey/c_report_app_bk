@@ -32,6 +32,9 @@ class Phone(models.Model):
     price = models.DecimalField(max_digits=12,decimal_places=2)
     quantity = models.PositiveBigIntegerField()
 
+    def  __str__(self):
+        return self.brand  +" "+ self.model
+
 class Shipping(models.Model):
     shipping_id  = models.UUIDField(
         primary_key=True,
@@ -51,4 +54,5 @@ class Receiving(models.Model):
         blank=False
     )
     phone = models.ForeignKey(Phone, on_delete= models.PROTECT)
+    received_date = models.DateField(auto_now=True)
 
