@@ -1,0 +1,93 @@
+# Byte-compiled files
+__pycache__/
+*.py[cod]
+
+# Django-specific
+*.log
+*.pot
+*.pyc
+*.pyo
+*.sqlite3
+db.sqlite3
+
+# Virtual environment
+venv/
+env/
+ENV/
+*.venv
+*.env
+
+# Secrets and environment variables
+*.env
+.env
+config/settings_local.py
+
+# Media files (if applicable)
+media/
+
+# Static files (collected via `collectstatic`)
+staticfiles/
+
+# Cache and session files
+*.cache
+*.session
+
+# IDEs and editors
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# macOS-specific
+.DS_Store
+
+# Windows-specific
+Thumbs.db
+desktop.ini
+
+# Coverage reports
+htmlcov/
+.coverage
+*.cover
+*.py,cover
+.hypothesis/
+
+# Test and debug output
+nosetests.xml
+coverage.xml
+*.cover
+*.log
+.tox/
+*.pytest_cache/
+
+# MyPy and Pyre type checker cache
+.mypy_cache/
+.pyre/
+
+# Build artifacts
+build/
+dist/
+*.egg-info/
+.eggs/
+*.whl
+*.egg
+
+# Docker-related
+*.env
+docker-compose.override.yml
+*.pid
+
+# Pipenv files (if used)
+Pipfile.lock
+
+# Celery-related
+celerybeat-schedule
+*.workerstate
+
+# Documentation
+docs/_build/
+
+# Node.js (if used)
+node_modules/
+yarn-error.log
+yarn-debug.log*
